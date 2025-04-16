@@ -7,7 +7,7 @@ public class Executive extends Passagem {
     public double custoBagagem(int[] pesos) {
         double custo = 0;
         for (int i = 0; i < pesos.length; i++) {
-            if (i >= 2) { // duas bagagens grátis
+            if (i > 2) { // duas bagagens grátis
                 custo += pesos[i] * 0.5;
             }
         }
